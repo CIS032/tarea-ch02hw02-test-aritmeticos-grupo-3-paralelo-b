@@ -2,13 +2,13 @@
 #tarea-ch02hw02-test-aritmeticos-grupo-3-paralelo-b created by GitHub Classroom
 # Tarea: Programa de Test Aritméticos
 
-#Carrera de Ingeniería en Sistemas - UNL
+# Carrera de Ingeniería en Sistemas - UNL
 
-#Asignatura: Programación II 2017/2018
+# Asignatura: Programación II 2017/2018
 
-#Docente:# Milton Labanda
+# Docente: - Milton Labanda
 
-#Miembros del Grupo: 
+# Miembros del Grupo: 
 
  - Jhon Alexander Carrión Piedra.
  
