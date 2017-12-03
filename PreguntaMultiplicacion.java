@@ -3,24 +3,39 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package testpreguntasaritmeticas;
+package testaritmeticos;
 
 /**
  *
  * @author Grupo 3
  */
 public class PreguntaMultiplicacion implements PreguntaEntera {
-    private int a, b;//Los numeros del problema
 
-    public PreguntaMultiplicacion() {//constructor
-        a = (int) (Math.random() * 50 + 1);
-        b = (int) (Math.random() * 50);
+    private int a;
+    private int b;
+    private int respuestaUsuario;
+
+    public PreguntaMultiplicacion() {
+        this.a = (int) (Math.random() * 50 + 1);
+        this.b = (int) (Math.random() * 50);
     }
 
+    @Override
+    public int getRespuestaUsuario() {
+        return respuestaUsuario;
+    }
+
+    @Override
+    public void setRespuestaUsuario(int respuestaUsuario) {
+        this.respuestaUsuario = respuestaUsuario;
+    }
+
+    @Override
     public String getPregunta() {
-        return "Cuanto es: " + a + " * " + b + " ?";
+        return "El producto de " + a + " * " + b + " es?";
     }
 
+    @Override
     public int getRespuestaCorrecta() {
         return a * b;
     }
