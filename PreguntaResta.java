@@ -3,24 +3,39 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package testpreguntasaritmeticas;
+package testaritmeticos;
 
 /**
  *
- * @author Grupo 3
+ * @author alex
  */
-public class  PreguntaResta implements PreguntaEntera {
-    private int a, b;//Los numeros del problema
+public class PreguntaResta implements PreguntaEntera {
 
-    public PreguntaResta() {//constructor
-        a = (int) (Math.random() * 50 + 1);
-        b = (int) (Math.random() * 50);
+    private int a;
+    private int b;
+    private int respuestaUsuario;
+
+    public PreguntaResta() {
+        this.a = (int) (Math.random() * 50 + 1);
+        this.b = (int) (Math.random() * 50);
     }
 
+    @Override
+    public int getRespuestaUsuario() {
+        return respuestaUsuario;
+    }
+
+    @Override
+    public void setRespuestaUsuario(int respuestaUsuario) {
+        this.respuestaUsuario = respuestaUsuario;
+    }
+
+    @Override
     public String getPregunta() {
-        return "Cuanto es: " + a + " - " + b + " ?";
+        return "La resta entre " + a + " y " + b + " es?";
     }
 
+    @Override
     public int getRespuestaCorrecta() {
         return a - b;
     }

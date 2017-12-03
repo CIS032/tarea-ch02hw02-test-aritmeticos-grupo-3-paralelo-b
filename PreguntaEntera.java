@@ -3,14 +3,19 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package testpreguntasaritmeticas;
+package testaritmeticos;
 
 /**
  *
- * @author Grupo 3
+ * @author alex
  */
 public interface PreguntaEntera {
-    public String getPregunta();
-    public int getRespuestaCorrecta();
-    
+
+    int getRespuestaUsuario();
+
+    void setRespuestaUsuario(int respuestaUsuario);
+
+    String getPregunta();
+
+    int getRespuestaCorrecta();
 }
